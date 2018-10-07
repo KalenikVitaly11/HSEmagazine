@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:id="@+id/first"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_journal"
+            android:icon="@drawable/ic_round_class_24px"
+            android:title="@string/journal" />
+        <item
+            android:id="@+id/nav_collegium"
+            android:icon="@mipmap/ic_account_group_white_24dp"
+            android:title="@string/collegium" />
+        <item
+            android:id="@+id/nav_releases"
+            android:icon="@mipmap/ic_book_multiple_white_24dp"
+            android:title="@string/prev_releases" />
+        <item
+            android:id="@+id/nav_for_authors"
+            android:icon="@mipmap/ic_account_multiple_plus_white_24dp"
+            android:title="@string/for_authors" />
+        <item
+            android:id="@+id/nav_reviews"
+            android:icon="@mipmap/ic_account_check_white_24dp"
+            android:title="@string/reviews" />
+        <item
+            android:id="@+id/nav_ethics"
+            android:icon="@mipmap/ic_access_point_white_24dp"
+            android:title="@string/ethics" />
+        <item
+            android:id="@+id/nav_subscription"
+            android:icon="@mipmap/ic_book_plus_white_24dp"
+            android:title="@string/subscription" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_outline_people_24px"
+            android:title="@string/contacts" />
+    </group>
+    <group
+        android:id="@+id/second"
+        android:checkableBehavior="none">
+        <item xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/change_language"
+            android:title="@string/switch_lang"
+            app:actionLayout="@layout/menu_switch"
+            app:showAsAction="always" />
+
+    </group>
+
+</menu>

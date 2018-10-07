@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "565865175510",
+    "firebase_url": "https://bi-journal.firebaseio.com",
+    "project_id": "bi-journal",
+    "storage_bucket": "bi-journal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565865175510:android:b7e059c110c699a1",
+        "android_client_info": {
+          "package_name": "org.styleru.hsemagazine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565865175510-bmhim41abjeto7ddved6nchpklnicrg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzjm6Kaiu2RSDCpP64dKDQ9ZzIEOrOpYM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
