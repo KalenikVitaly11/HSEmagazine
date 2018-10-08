@@ -108,6 +108,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             setDisplayShowTitleEnabled(false)
             setCustomView(R.layout.custom_action_bar)
         }
+
         setCustomTitle(resources.getString(R.string.journal))
     }
 
