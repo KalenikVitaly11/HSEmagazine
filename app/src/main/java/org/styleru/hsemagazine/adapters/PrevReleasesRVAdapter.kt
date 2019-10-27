@@ -24,7 +24,7 @@ class PrevReleasesRVAdapter(val data: ArrayList<Any>, val context: Context) : Re
         if (data[position] is Edition) {
             holder.title.text = (data[position] as Edition).name
             holder.closeYear()
-            holder.title.setOnClickListener {
+            holder.layout.setOnClickListener {
                 val transaction = (context as MainActivity).supportFragmentManager.beginTransaction()
                 val fragment = ReleaseFragment()
 
@@ -47,6 +47,7 @@ class PrevReleasesRVAdapter(val data: ArrayList<Any>, val context: Context) : Re
         var year = itemView.release_item_year
         var title = itemView.release_item_title
         var line = itemView.release_item_line
+        var layout = itemView.release_item_layout
 
         fun showYear() {
             year.visibility = View.VISIBLE

@@ -4,6 +4,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -24,6 +28,9 @@
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="817d2fc668d67d2c45674d04d36bf6dfd3a23bdc" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDr3v4Ey-7glN-9NhCUqKeBrs7m1gdKTa0" />
     </application>
 
 </manifest>

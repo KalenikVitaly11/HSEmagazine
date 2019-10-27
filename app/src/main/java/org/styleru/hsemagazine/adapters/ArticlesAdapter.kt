@@ -37,7 +37,7 @@ class ArticlesAdapter(val data: ArrayList<Any>, val context: Context) : Recycler
             holder.title.text = content
             holder.authors.text = article.author
 
-            holder.title.setOnClickListener {
+            holder.layout.setOnClickListener {
                 val transaction = (context as MainActivity).supportFragmentManager.beginTransaction()
 
                 val fragment = PDFFragment()
@@ -67,6 +67,7 @@ class ArticlesAdapter(val data: ArrayList<Any>, val context: Context) : Recycler
         var title = itemView.article_title
         var authors = itemView.article_authors
         val line = itemView.article_line
+        val layout= itemView.article_layout
 
         fun showTopic() {
             topic.visibility = View.VISIBLE
