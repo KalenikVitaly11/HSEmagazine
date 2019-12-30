@@ -56,6 +56,8 @@ class PrevReleasesFragment : Fragment() {
                     .subscribe({ list ->
                         prev_releases_progress.visibility = View.GONE
                         dataEdition = ArrayList(list!!.releases)
+                        dataEdition.sortWith(compareBy { it.year })
+                        dataEdition.reverse()
                         dataEdition.forEach {
                             if (!dataForRV.contains(it.year))
                                 dataForRV.add(it.year)
@@ -77,6 +79,8 @@ class PrevReleasesFragment : Fragment() {
                     .subscribe({ list ->
                         prev_releases_progress.visibility = View.GONE
                         dataEdition = ArrayList(list!!.releases)
+                        dataEdition.sortWith(compareBy { it.year })
+                        dataEdition.reverse()
                         dataEdition.forEach {
                             if (!dataForRV.contains(it.year))
                                 dataForRV.add(it.year)
